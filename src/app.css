@@ -1,0 +1,50 @@
+/* Global stylesheet — imported once by +layout.svelte.
+   Sets up box-sizing, the iOS viewport-height override, and
+   app-wide touch/scroll behaviour. Theme colours are in
+   src/lib/themes/paper.css, fonts in src/lib/themes/fonts.css. */
+
+@import './lib/themes/fonts.css';
+@import './lib/themes/paper.css';
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* Smooth theme transitions without flicker on first paint */
+	transition: background-color 0.3s ease, color 0.3s ease;
+	/* iOS PWA standalone: -webkit-fill-available correctly accounts for
+	   the status bar in both portrait and landscape on initial load,
+	   before the JS --app-height variable is set. Must come after 100%
+	   so it overrides it in WebKit while other engines ignore it. */
+	height: 100%;
+	height: -webkit-fill-available;
+	overflow: hidden;
+	touch-action: pan-x pan-y;
+}
+
+body {
+	height: 100%;
+	overflow: hidden;
+	touch-action: pan-x pan-y;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text-primary);
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-user-select: none;
+	user-select: none;
+	/* Prevent rubber-band scroll revealing white behind the themed bg */
+	overscroll-behavior: none;
+}
+
+/* Remove tap highlight on interactive elements app-wide */
+button, [role="button"] {
+	-webkit-tap-highlight-color: transparent;
+}

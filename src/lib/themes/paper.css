@@ -1,0 +1,122 @@
+/* ─────────────────────────────────────────────────────────────────
+   lit-clock Theme System
+
+   Each theme defines:
+     --bg                 background
+     --text-primary       quote body, attribution
+     --text-muted         date/clock header — text-primary at 65% opacity
+     --border             input underlines, dividers
+     --font-body          typeface for quotes, attribution, settings text
+     --font-header        SF Pro Text for date/clock — same across all themes
+     --font-weight-body   body font-weight: 400 for serifs/Avenir, 500 for Bold
+     --font-weight-strong bold time text weight: 700 most themes, 800 for Bold
+     --qd-s/m/l           desktop font-size caps used by clamp() in QuoteDisplay
+     --quote-leading      line-height for quote text
+     --attr-size          attribution font size
+     --date-size          date/clock font size
+
+   Inverted variants ([data-invert="true"]) share one dark bg (#111111)
+   across all themes. Only the text colour differs, each echoing the
+   warmth of its light-mode palette.
+
+   The data-theme attribute is set on <html> by +layout.svelte in response
+   to the settings store, and data-invert is toggled the same way.
+────────────────────────────────────────────────────────────────── */
+
+/* ── Paper ── warm off-white · Charter · generous leading ─────── */
+[data-theme="paper"] {
+	--bg:                #EEEDED;
+	--text-primary:      #000000;
+	--text-muted:        rgba(0, 0, 0, 0.65);
+	--border:            rgba(0, 0, 0, 0.10);
+
+	--font-body:         'Charter', 'Georgia', serif;
+	--font-header:       'SF Pro Text', -apple-system, system-ui, sans-serif;
+	--font-weight-body:   400;
+	--font-weight-strong: 700;
+
+	--qd-s: 2.4rem;   --qd-m: 1.9rem;   --qd-l: 1.55rem;
+	--quote-leading:   1.78;
+	--attr-size:       0.95rem;
+	--date-size:       0.82rem;
+}
+[data-theme="paper"][data-invert="true"] {
+	--bg:           #111111;
+	--text-primary: #EDE9E3;
+	--text-muted:   rgba(237, 233, 227, 0.65);
+	--border:       rgba(255, 255, 255, 0.10);
+}
+
+/* ── Quiet ── warm sand · Georgia · classic editorial ────────── */
+[data-theme="quiet"] {
+	--bg:                #F1E1C9;
+	--text-primary:      #000000;
+	--text-muted:        rgba(0, 0, 0, 0.65);
+	--border:            rgba(0, 0, 0, 0.10);
+
+	--font-body:         'Georgia', 'Times New Roman', serif;
+	--font-header:       'SF Pro Text', -apple-system, system-ui, sans-serif;
+	--font-weight-body:   400;
+	--font-weight-strong: 700;
+
+	--qd-s: 2.4rem;   --qd-m: 1.9rem;   --qd-l: 1.55rem;
+	--quote-leading:   1.78;
+	--attr-size:       0.95rem;
+	--date-size:       0.82rem;
+}
+[data-theme="quiet"][data-invert="true"] {
+	--bg:           #111111;
+	--text-primary: #F0DCC2;
+	--text-muted:   rgba(240, 220, 194, 0.65);
+	--border:       rgba(255, 255, 255, 0.10);
+}
+
+/* ── Focus ── clean cream · Avenir Next · modern & airy ─────── */
+[data-theme="focus"] {
+	--bg:                #FFFCF4;
+	--text-primary:      #000000;
+	--text-muted:        rgba(0, 0, 0, 0.65);
+	--border:            rgba(0, 0, 0, 0.10);
+
+	--font-body:         'Avenir Next', -apple-system, system-ui, sans-serif;
+	--font-header:       'SF Pro Text', -apple-system, system-ui, sans-serif;
+	--font-weight-body:   400;
+	--font-weight-strong: 700;
+
+	/* Slightly tighter sizing — Avenir's large x-height reads bigger */
+	--qd-s: 2.2rem;   --qd-m: 1.75rem;  --qd-l: 1.42rem;
+	--quote-leading:   1.65;
+	--attr-size:       0.92rem;
+	--date-size:       0.82rem;
+}
+[data-theme="focus"][data-invert="true"] {
+	--bg:           #111111;
+	--text-primary: #F5F3EE;
+	--text-muted:   rgba(245, 243, 238, 0.65);
+	--border:       rgba(255, 255, 255, 0.10);
+}
+
+/* ── Bold ── pure white · SF Pro Text · high-contrast precision ─ */
+[data-theme="bold"] {
+	--bg:                #FFFFFF;
+	--text-primary:      #000000;
+	--text-muted:        rgba(0, 0, 0, 0.65);
+	--border:            rgba(0, 0, 0, 0.10);
+
+	--font-body:         'SF Pro Text', -apple-system, system-ui, sans-serif;
+	--font-header:       'SF Pro Text', -apple-system, system-ui, sans-serif;
+	--font-weight-body:   500;   /* Medium — one step above Regular */
+	--font-weight-strong: 800;   /* Heavy — clear contrast over Medium body */
+
+	/* Slightly tighter — SF Pro Text reads big at large sizes */
+	--qd-s: 2.2rem;   --qd-m: 1.75rem;  --qd-l: 1.42rem;
+	--quote-leading:   1.62;
+	--attr-size:       0.92rem;
+	--date-size:       0.82rem;
+}
+[data-theme="bold"][data-invert="true"] {
+	--bg:           #111111;
+	--text-primary: #FFFFFF;
+	--text-muted:   rgba(255, 255, 255, 0.65);
+	--border:       rgba(255, 255, 255, 0.10);
+}

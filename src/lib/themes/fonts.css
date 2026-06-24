@@ -1,0 +1,90 @@
+/* ─────────────────────────────────────────────────────────────────
+   lit-clock — Local Font Declarations
+
+   Only the weights actually requested in CSS are declared.
+   Italic variants are omitted — all text in this app renders with
+   font-style: normal (sanitizeText strips <em> and all HTML from
+   quote data, and every CSS rule explicitly sets normal).
+
+   TTC collections (Charter, Avenir Next) use local() first so
+   macOS browsers pull the correct named variant directly from the
+   system instead of guessing from the collection. The url() is a
+   cross-platform fallback.
+
+   Weight map:
+     400  Regular — Paper / Quiet / Focus body text
+     500  Medium  — Bold theme body text
+     700  Bold    — all headers + selected UI states (every theme)
+     800  Heavy   — Bold theme time text (contrast over Medium body)
+────────────────────────────────────────────────────────────────── */
+
+/* ── SF Pro Text ─────────────────────────────────────────────── */
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('../assets/fonts/SF-Pro-Text-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('../assets/fonts/SF-Pro-Text-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('../assets/fonts/SF-Pro-Text-Heavy.otf') format('opentype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ── Charter (Paper theme body) ──────────────────────────────── */
+@font-face {
+	font-family: 'Charter';
+	src: local('Charter'), url('../assets/fonts/Charter.ttc') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Charter';
+	src: local('Charter-Bold'), url('../assets/fonts/Charter.ttc') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ── Georgia (Quiet theme body) ──────────────────────────────── */
+@font-face {
+	font-family: 'Georgia';
+	src: url('../assets/fonts/Georgia.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Georgia';
+	src: url('../assets/fonts/Georgia Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ── Avenir Next (Focus theme body) ──────────────────────────── */
+@font-face {
+	font-family: 'Avenir Next';
+	src: local('AvenirNext-Regular'), url('../assets/fonts/Avenir Next.ttc') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Avenir Next';
+	src: local('AvenirNext-Bold'), url('../assets/fonts/Avenir Next.ttc') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

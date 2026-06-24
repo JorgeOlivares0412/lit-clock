@@ -1,0 +1,17 @@
+{
+	// Removed extends to avoid referencing a missing .svelte-kit/tsconfig.json
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": false,
+		"moduleResolution": "bundler",
+		"ignoreDeprecations": "6.0",
+		"baseUrl": "./",
+		"paths": {
+			"$lib/*": ["src/lib/*"]
+		}
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", ".svelte-kit"]
+	// Path aliases are handled by https://svelte.dev/docs/kit/configuration#alias
+	// except $lib which is handled by https://svelte.dev/docs/kit/configuration#files
+}

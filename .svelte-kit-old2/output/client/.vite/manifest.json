@@ -1,0 +1,109 @@
+{
+  ".svelte-kit/generated/client-optimized/app.js": {
+    "file": "_app/immutable/entry/app.BqbTEWZW.js",
+    "name": "entry/app",
+    "src": ".svelte-kit/generated/client-optimized/app.js",
+    "isEntry": true,
+    "imports": [
+      "_BrfdEsfY.js",
+      "_kNaey6uv.js",
+      "_xihTtKlq.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/client-optimized/nodes/0.js",
+      ".svelte-kit/generated/client-optimized/nodes/1.js",
+      ".svelte-kit/generated/client-optimized/nodes/2.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/0.js": {
+    "file": "_app/immutable/nodes/0.XnBDs4md.js",
+    "name": "nodes/0",
+    "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
+    "isEntry": true,
+    "imports": [
+      "_BrfdEsfY.js",
+      "_xihTtKlq.js",
+      "_BvxhH8ls.js"
+    ],
+    "css": [
+      "_app/immutable/assets/0.BjH6_aBt.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/Georgia.CReoFFPn.ttf"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/1.js": {
+    "file": "_app/immutable/nodes/1.rCBzyGQJ.js",
+    "name": "nodes/1",
+    "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
+    "isEntry": true,
+    "imports": [
+      "_BrfdEsfY.js",
+      "_DKCugtLM.js",
+      "_xihTtKlq.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/2.js": {
+    "file": "_app/immutable/nodes/2.CXM_3Cww.js",
+    "name": "nodes/2",
+    "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
+    "isEntry": true,
+    "imports": [
+      "_BrfdEsfY.js",
+      "_DKCugtLM.js",
+      "_xihTtKlq.js",
+      "_BvxhH8ls.js"
+    ],
+    "css": [
+      "_app/immutable/assets/2.BPzplskU.css"
+    ]
+  },
+  "_BW11eJ_l.js": {
+    "file": "_app/immutable/chunks/BW11eJ_l.js",
+    "name": "index-client",
+    "imports": [
+      "_BrfdEsfY.js"
+    ]
+  },
+  "_BrfdEsfY.js": {
+    "file": "_app/immutable/chunks/BrfdEsfY.js",
+    "name": "index-client"
+  },
+  "_BvxhH8ls.js": {
+    "file": "_app/immutable/chunks/BvxhH8ls.js",
+    "name": "settings",
+    "imports": [
+      "_BrfdEsfY.js",
+      "_BW11eJ_l.js"
+    ]
+  },
+  "_DKCugtLM.js": {
+    "file": "_app/immutable/chunks/DKCugtLM.js",
+    "name": "client",
+    "imports": [
+      "_BrfdEsfY.js",
+      "_BW11eJ_l.js"
+    ]
+  },
+  "_kNaey6uv.js": {
+    "file": "_app/immutable/chunks/kNaey6uv.js",
+    "name": "preload-helper"
+  },
+  "_xihTtKlq.js": {
+    "file": "_app/immutable/chunks/xihTtKlq.js",
+    "name": "disclose-version"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
+    "file": "_app/immutable/entry/start.B7OUxuy0.js",
+    "name": "entry/start",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_DKCugtLM.js"
+    ]
+  },
+  "src/lib/assets/fonts/Georgia.ttf": {
+    "file": "_app/immutable/assets/Georgia.CReoFFPn.ttf",
+    "src": "src/lib/assets/fonts/Georgia.ttf"
+  }
+}

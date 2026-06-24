@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" data-theme="paper">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Prevent pinch-zoom and address-bar reflow; viewport-fit=cover for iPhone notch/island -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+		<meta name="description" content="lit-clock — the time told through literature" />
+		<!-- iOS PWA: hide browser chrome when launched from home screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<!-- Theme color matches the paper theme background -->
+		<meta name="theme-color" content="#eae7e0" />
+		<link rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
+		%sveltekit.head%
+	</head>
+	<body>
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

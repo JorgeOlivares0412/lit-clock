@@ -1,0 +1,83 @@
+[
+  {
+    "time": "00:00",
+    "quote_first": "",
+    "quote_time_case": "Midnight",
+    "quote_last": ".",
+    "title": "Test — Minimum (time only)",
+    "author": "LitClock Test Suite",
+    "sfw": "yes"
+  },
+  {
+    "time": "00:00",
+    "quote_first": "She glanced at the clock. ",
+    "quote_time_case": "Ten past eight",
+    "quote_last": ". The whole day had collapsed into that single fact.",
+    "title": "Test — Short, time in middle",
+    "author": "LitClock Test Suite",
+    "sfw": "yes"
+  },
+  {
+    "time": "00:00",
+    "quote_first": "She had been awake since ",
+    "quote_time_case": "half past two",
+    "quote_last": ", lying in the dark with her eyes open, rehearsing conversations that would never take place and revising arguments that had already been lost.",
+    "title": "Test — Medium, time early",
+    "author": "LitClock Test Suite",
+    "sfw": "yes"
+  },
+  {
+    "time": "00:00",
+    "quote_first": "The clock on the mantelpiece showed ",
+    "quote_time_case": "a quarter to eleven",
+    "quote_last": " when he finally set down his pen. He had written six pages, crossed out four of them, and arrived at more or less the same conclusion he had started with that morning. The fire had burned low. Outside, the street was quiet in that particular way streets become quiet after midnight — not silence exactly, but an absence of the usual noise, as though the city had simply forgotten for a moment to keep up appearances.",
+    "title": "Test — Long, time early",
+    "author": "LitClock Test Suite",
+    "sfw": "yes"
+  },
+  {
+    "time": "00:00",
+    "quote_first": "He arrived at ",
+    "quote_time_case": "seven o'clock sharp",
+    "quote_last": " every morning for thirty-one years, hung his coat on the same hook, filled his kettle from the same tap, and sat at the same desk facing the same window through which the same plane tree could be seen in all its seasonal variations. He had watched that tree bud and leaf and flame and strip itself bare more times than he could count. He knew the particular slant of winter light across the filing cabinets, the exact pitch of the radiator's morning clank, the smell of the building on damp Tuesdays. These things did not comfort him. But they were his, and he was theirs, and that, he had long since decided, was sufficient.",
+    "title": "Test — Very long (500+ chars)",
+    "author": "LitClock Test Suite",
+    "sfw": "yes"
+  },
+  {
+    "time": "00:00",
+    "quote_first": "HAMLET: What hour is it?<br/>HORATIO: I think it lacks of ",
+    "quote_time_case": "twelve",
+    "quote_last": ".<br/>MARCELLUS: No, it is struck.<br/>HORATIO: Indeed? I heard it not.",
+    "title": "Test — Line breaks, play dialogue",
+    "author": "LitClock Test Suite",
+    "sfw": "yes"
+  },
+  {
+    "time": "00:00",
+    "quote_first": "At ",
+    "quote_time_case": "the stroke of nine",
+    "quote_last": "<br/>the ravens left the tower,<br/>the bells stopped mid-peal,<br/>and the city held its breath<br/>for exactly one second.",
+    "title": "Test — Line breaks, verse",
+    "author": "LitClock Test Suite",
+    "sfw": "yes"
+  },
+  {
+    "time": "00:00",
+    "quote_first": "At ",
+    "quote_time_case": "two minutes past twelve",
+    "quote_last": " the door opens &amp; two men come into the lobby — one tall &amp; fair, the other wearing the expression of a man who&#39;s arrived somewhere he didn&#39;t entirely mean to be.",
+    "title": "Test — HTML entities (&amp; &#39;)",
+    "author": "LitClock Test Suite",
+    "sfw": "yes"
+  },
+  {
+    "time": "00:00",
+    "quote_first": "It was precisely ",
+    "quote_time_case": "four in the afternoon",
+    "quote_last": " — she knew, because she\u2019d been watching the clock for the past hour \u2014 when the letter arrived, unstamped, in her own handwriting.",
+    "title": "Test — Em-dashes & punctuation",
+    "author": "LitClock Test Suite",
+    "sfw": "yes"
+  }
+]
